@@ -1,0 +1,41 @@
+@import "_article";
+@import "_tags";
+@import "_search__form";
+@import "_recent";
+@import "_aside";
+@import "_prices";
+
+.container {
+	@media (min-width: 768px) {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+.main {
+
+	&__article {
+	}
+	
+	&__tags {
+		display: none;
+		margin: 30px 0 40px;
+		@media (min-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__search {
+
+	}
+	&__side {
+	}
+	&__prices {
+	}
+	&__body {
+		margin: 0 auto;
+		max-width: 1200px;
+		@media (min-width: 768px) {
+			display: flex;
+		}
+	}
+}

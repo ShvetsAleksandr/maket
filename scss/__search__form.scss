@@ -1,0 +1,35 @@
+.search {
+
+	&__form {
+		border: 1px solid #D7D8D9;
+		border-radius: 4px;
+		display: flex;
+	}
+
+	&__btn {
+		display: inline-block;
+		padding: 20px;
+		width: 18px;
+		height: 18px;
+		background: #fff;
+
+	}
+
+	&__input {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		color: #22252E;
+		margin-left: 20px;
+		padding: 16px 0px 15px;
+	}
+}
+
+.search {
+	&__main {
+		margin: 40px 20px;
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+}

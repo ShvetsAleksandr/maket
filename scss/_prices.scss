@@ -1,0 +1,84 @@
+@import "_card";
+.prices {
+	background: linear-gradient(161.3deg, #3D4251 7.63%, #272B35 90.9%);
+
+	&__container {
+		padding: 60px 20px 4px;
+		@media (min-width: 768px) {
+			max-width: 1240px;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 44px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 40px;
+		strong {
+			display: block;
+			font-weight: 300;
+			@media (min-width: 768px) {
+				display: inline;
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media (min-width: 768px) {
+			flex-direction: row;;
+		}
+	}
+
+	&__card {
+		flex: 1 0 auto;
+	}
+
+	&__subtitle {
+		margin: 36px 0 20px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		color: #FFFFFF;
+		text-align: center;
+	}
+
+	&__grid {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		column-gap: 15px;
+		row-gap: 30px;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+	&__full {
+		@media (max-width: 480px) and (min-width: 330px) {
+			grid-column: span 3;
+		}
+	}
+	&__link {
+		display: block;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+		color: #4CB649;
+		margin: 40px 0;
+		text-align: center;
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 15px;
+			height: 10px;
+			background: url('../img/prices/link/Shape.svg') no-repeat center/cover;
+			margin-left: 17px;
+		}
+	}
+}
+

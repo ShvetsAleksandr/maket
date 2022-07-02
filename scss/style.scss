@@ -1,0 +1,25 @@
+@import "_normalize";
+
+//*  Шрифт страницы:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+$font-family: "Roboto";
+
+body {
+   font-family: $font-family;
+   
+}
+wrapper {
+   width: 100%;
+}
+.bottom {
+   margin-bottom: 200px;
+}
+.hold {
+   overflow: hidden;
+}
+//header
+@import "_header";
+//main
+@import "_main";
+//footer
+@import "_footer";

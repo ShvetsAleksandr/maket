@@ -1,0 +1,133 @@
+.card {
+	background: #FFFFFF;
+	border: 1px solid #EBECED;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: 0.3s;
+	@media (max-width: 768px) {
+		&:hover {
+			border: 4px solid #FF8D00;
+			border-radius: 4px;
+			.card__button {
+				background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+				color: #FFFFFF;
+				border: none;
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		&:hover {
+			border: 4px solid #4CB649;
+			transform: scaleY(110%);
+			.card__button {
+				background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+				color: #FFFFFF;
+				border: none;
+			}
+		}
+	}
+
+	&__period {
+		margin-top: 48px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+		color: #323642;
+		&::after {
+			content: '';
+			display: block;
+			position: relative;
+			margin: 12px 0 16px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 24px;
+			height: 2px;
+			background: #4CB649;
+		}
+	}
+
+	&__price {
+		font-weight: 300;
+		font-size: 56px;
+		line-height: 66px;
+		letter-spacing: -1.5px;
+		color: #22252E;
+		&::before {
+			content: '$';
+			display: inline-block;
+			transform: translateY(-50%);
+			margin-right: 8px;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 32px;
+			color: #22252E;
+		}
+		&::after {
+			content: '/mo.';
+			display: inline-block;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 32px;
+			color: #22252E;
+			margin-left: 3px;
+		}
+	}
+	&__text {
+		flex: 1 0 auto;
+	}
+	&__bonus {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+		color: #323642;
+		&::before {
+			content: '';
+			display: block;
+			position: relative;
+			margin: 18px 0 27px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 200px;
+			height: 1px;
+			background: #EBECED;
+		}
+		span {
+			display: inline-block;
+			text-decoration-line: line-through;
+			color: #F24458;
+			margin-right: 8px;
+		}
+	}
+
+	&__save {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 22px;
+		color: #323642;
+		margin-top: 4px;
+
+	}
+
+	&__button {
+		transition: 0.4s;
+		margin-top: 30px;
+		display: inline-block;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #4CB649;
+		padding: 11px 0;
+		width: 205px;
+		border: 1px solid #4CB649;
+		border-radius: 30px;
+		margin-bottom: 40px;
+	}
+}
